@@ -11,7 +11,9 @@ This repository has the project of the course of Introduction to Algorithms and 
 
 ## Objetives
 
-UNDER CONSTRUCTION
+This repository will have the project I did for the course of IADS in college. The project is a simple one, but that contains the most fundamental concepts of C.
+
+Over time, I will try to improve the code the best I can. Any help or recommendation is welcome, so feel free to change the code. 
 
 ## Part 1
 
