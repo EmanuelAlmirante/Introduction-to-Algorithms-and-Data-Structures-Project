@@ -19,6 +19,7 @@ typedef struct {
 
 void createCountryVector(countryTable tab[]) {
 	int i;
+
 	/*Fills the struct with countries, debt and gdp*/
 	for(i = 0; i < VAL_2; i++) {
 		scanf ("%s%f%f", tab[i].code, &(tab[i].debt), &(tab[i].gdp));
@@ -29,6 +30,7 @@ void createCountryVector(countryTable tab[]) {
 
 void createOriginalDebtVector(countryTable tab[], float v[]) {
 	int i;
+
 	/*Fills the struct each position of the vector with the debt of each country*/
 	for(i = 0; i < VAL_2; i++) {
 		v[i] = tab[i].debt;
@@ -38,6 +40,7 @@ void createOriginalDebtVector(countryTable tab[], float v[]) {
 void fillMatrix(float v[LINE][COLUMN]) {
 	int line;
 	int column;
+
 	/*To go through the lines of the matrix*/
 	for(line = 0; line < LINE; line++) {
 		/*To go through the columns of the matrix*/
@@ -99,6 +102,7 @@ void cleanVector(char v[VAL_1][4]) {
 
 int searchTabCountries(char v[VAL_1], countryTable tab[]) {
 	int i;
+
 	/*To go through the table with the countries*/
 	for(i = 0; i < VAL_2; i++) {
 		/*Compares the string given with the code of the country that is given*/
@@ -114,9 +118,54 @@ int searchTabCountries(char v[VAL_1], countryTable tab[]) {
 
 void sumsDebt(countryTable tab[], float v[LINE][COLUMN], int t) {
 	int i;
+
 	/*Sums to the countries table the values of the debt table*/
 	for(i = 0; i < VAL_2; i++) {
 		tab[i].debt = (tab[i].debt) + v[t][i];
 	}
+}
+
+int checksDefaultInfection(countryTable tab[], char v[VAL_1][4], float pd, int l){
+	int i;
+
+	for(i = 0; i < VAL_2; i++){
+		/*If the country is defaulting and was not analyzed*/
+		if((tab[i].debt) >= ((tab[i].gdp) * pd) && ((tab[i].flag) == 1)){
+			/*Puts the country in the vector of the defaulting countries*/
+			strcpy(v[l], tab[i].code);
+			l++;
+		}		
+	}
+}
+
+int casesDefault(char v[VAL_1][4], countryTable tab[], float debtMatrix[LINE][COLUMN], float pd, int l){
+	int i = 0, o = 0;
+
+	/*Loop until the special character is not in the  vector of the defaulting countries*/
+	while(v[i][0] != 'z'){
+		/*Integer that indicates the position of the country in the table*/
+		p = searchTabCountries(v[i], tab);
+		/*Flag that indicates if the country was already analyzed*/
+		tab[p].flag = 0;
+		/*Sum the value of the debt of that country to all the other countries*/
+		o = checksDefaultInfection(tab, v, pd, l);
+		i++;
+	}
+	return o;
+}
+
+int returnsCasesDefault(char v[VAL_1][4], int contD){
+	int i;
+
+	/*Loop to go through the vector where the defaulting countries are saved*/
+	for(i = 0; i < VAL_2; i++){
+		/*While special charater 'z' is not found increments the counter of defaulting countries*/
+		if(v[i][0} != 'z'){
+			contD++;
+		} else{
+			break;
+		}
+	}
+	return contD;
 }
 
