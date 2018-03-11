@@ -88,14 +88,51 @@ void riskInterventionAndDefault(tableOfCountries table[], float pi, float pd, in
     printf("\n");
 }
 
+int casesDefaulting(char vector[VAL_2][4], tableOfCountries table[], float debtMatrix[LINE][COLUMN], float pd, int l) {
+    int i = 0, p, o = 0;
 
+    /*Loops through vector of countries in default while it does not encounter character 'z'*/
+    while(v[i][0] != 'z') {
+        p = 
+        /*Flag indicating that the country was already analyzed*/
+        table[p].flag = 0;
+        /*Sum the debt of that country to other countries to the debt of those other countries*/
+        sumDebt(table, debtMatrix, p);
+        i++;
+    }
+    return o;
+}
 
+void cleanVectorDefaulting(char vector[VAL_2][4]) {
+    int i, j;
+
+    for(i = 0; i < VAL_2; i++) {
+        for(j = 0; j < 4; j++) {
+            /*Initializes the vector with character 'z'*/
+            vector[i][j] = 'z';
+        }
+    }
+}
+
+void cleanCounters(int countI, int countD) {
+    countD = 0;
+    countI = 0;
+}
+
+void resetsOriginalDebtsTable(tableOfCountries table[], float vector[]) {
+    int i;
+
+    /*Uses the vector where the original debt values where saved to put them in the table again*/
+    for(i = 0; i < VAL_1; i++) {
+        table[i].debt = vector[i];
+    }
+}
 
 int main() {
     
-    int i, k, contI = 0, contD = 0, l = 1;
+    int i, k, countI = 0, countD = 0, l = 1;
     float pi, pd;
-    char vectorDefault[VAL_2][4];
+    char vectorDefaulting[VAL_2][4];
     int vectorRiskDefault[VAL_1];
     int vectorRiskIntervention[VAL_1];
     float createVectorOriginalDebts[VAL_1];
@@ -110,6 +147,21 @@ int main() {
     fillDebtMatrix(debtMatrix);
 
     riskInterventionAndDefault(table, pi, pd, vectorRiskDefault, vectorRiskIntervention);
+
+    scanf("%d", &k);
+
+    for(i = 0; i < k; i++) {
+        cleanVectorDefaulting(vectorDefaulting);
+
+        getchar();
+        getchar();
+        scanf("%s", vectorDefaulting[0]);
+
+        l = (casesDefaulting(vectorDefaulting, table, debtMatrix, pd, l));
+
+        cleanCounters(countI, countD);
+        resetsOriginalDebtsTable(table, createVectorOriginalDebts);
+    }
 
     return 0;
 }
