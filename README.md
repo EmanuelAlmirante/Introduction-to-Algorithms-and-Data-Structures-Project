@@ -23,7 +23,36 @@ There are 17 countries in the Eurozone (EZ): Germany (ALE), Austria (AUT), Belgi
 
 At any given time, the countries can suffer an economic intervention or to default. The risk of suffering an intervention and to default are related with the country's debt and it's GDP. In this context we assume that when the debt of country **X** is greater than a **Pi** percentage of it's GDP, the country is in risk of suffering an intervention. The same way, when the debt of country **Y** is greater than a **Pd** of it's GDP, then the country is in risk of defaulting. **Pd** is always greater than **Pi**.
 
-UNDER CONSTRUCTION
+In this project, the objective is to develop a program that manipulates the information of the economic situation of each country of the EZ (debt, GDP, loans to other countries) and check which countries are in risk of suffering an interventation or defaulting. 
+
+If a country is in risk of entering in default (**debt >= Pd * GDP**) the program should indicate which other countries are in risk of being "infected" and in risk of defaulting. 
+
+### Input Data
+
+- One line with a real number **Pi**, greater than 0, which indicates the percentage of the GPD from which the country is in risk of intervention;
+
+- One line with a real number **Pd**, greater than **Pi**, which indicates the percentage of the GPD from which the country is in risk of defaulting;
+
+- 17 lines, each one with information of the 17 countries of the EZ:
+  - country code (3 letters);
+  - debt (real number);
+  - GDP (real number);
+
+- 17 lines, each with the debts of each country to other countries, represented by 17 real numbers separated by blank spaces;
+
+- One line with an integer **K**, greater than 0, that indicates the number of requests of what would happen if a specific country defaulted;
+
+- **K** lines, each one in the following format:
+  - letter **d**;
+  - country code;
+  
+### Output Data
+
+- Number of countries in risk of being interventioned, followed by the country codes;
+
+- Number of countries in risk of defaulting, followed by the country codes;
+
+- A sequence of lines, where each line corresponds to information about the consequences of a specific country defaulting. The lines respect the order given in the input and each line will have two numbers, with the first number representing the countries in risk of intervention and the second number representing the countries defaulting.
 
 ## Part 2 
 
