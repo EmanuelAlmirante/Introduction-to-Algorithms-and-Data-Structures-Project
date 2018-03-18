@@ -117,6 +117,10 @@ d ALE <br/>
 6 4 <br/>
 6 6 <br/>
 
+### Compile and execute the code
+
+UNDER CONSTRUCTION
+
 ## Part 2 
 
 **Note:** at the time there were only nine countries that had the contest. Also, the abbreviations of the countries derived from their names in portuguese.
@@ -204,6 +208,10 @@ p FRA <br/>
 000002 <br/>
 000006 <br/>
 000004 <br/>
+
+### Compile and execute the code
+
+UNDER CONSTRUCTION
 
 ## Part 3
 
