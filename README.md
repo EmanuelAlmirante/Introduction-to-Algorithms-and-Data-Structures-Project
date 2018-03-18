@@ -22,7 +22,7 @@ Over time, I will try to improve the code the best I can. Any help or recommenda
 
 ## Part 1
 
-Note: the abbreviations of the countries derived from their names in portuguese.
+**Note:** the abbreviations of the countries derived from their names in portuguese.
 
 There are 17 countries in the Eurozone (EZ): Germany (ALE), Austria (AUT), Belgium (BEL), Cyprus (CHI), Slovakia (ESL), Slovenia (ELO), Spain (ESP), Estonia (EST), Finland (FIN), France (FRA), Greece (GRE), Netherlands (HOL), Ireland (IRL), Italy (ITA), Luxembourg (LUX), Malta (MAL), Portugal (POR).
 
@@ -114,8 +114,102 @@ d ALE <br/>
 
 ## Part 2 
 
+**Note:** at the time there were only nine countries that had the contest. Also, the abbreviations of the countries derived from their names in portuguese.
+
+Euromillions is a lottery played in nine european countries: Portugal, Spain, France, Ireland, United Kingdom, Austria, Belgium, Switzerland, Luxembourg. 
+
+To play you bet on five numbers, that go from 1 to 50, and two stars, that go from 1 to 11. The probability of correctly guess the five numbers and two stars is 1 in 116 531 800. 
+
+The prize given to each winner varies accordingly to how many numbers and stars the player guessed. The amount available for the lottery is distributed by the 13 prizes, as per the table below. To win the 1st prize, a player needs to guess correctly the five numbers and two stars, but to win the 13th prize the player only need to guess correctly two numbers.
+
+| Prize      | Hits (numbers + stars) | Distribution |
+| ---------- | ---------------------- | ------------ |
+| 1st prize  | 5 + 2                  | 32.00%       |
+| 2nd prize  | 5 + 1                  | 4.80%        |
+| 2nd prize  | 5 + 0                  | 1.60%        |
+| 3rd prize  | 4 + 2                  | 0.80%        |
+| 4th prize  | 4 + 1                  | 0.70%        |
+| 5th prize  | 4 + 0                  | 0.70%        |
+| 6th prize  | 3 + 2                  | 0.50%        | 
+| 7th prize  | 3 + 1                  | 2.30%        |
+| 8th prize  | 2 + 2                  | 2.20%        |
+| 9th prize  | 3 + 0                  | 3.70%        |
+| 10th prize | 1 + 2                  | 6.50%        |
+| 11th prize | 2 + 1                  | 17.60%       |
+| 12th prize | 2 + 0                  | 18.00%       |
+
+In ths project the objective is to develop a program that manipulates the information relative to a Euromillions contest, namely the value available for prizes, the bets made and the the correct winning key, and information about the results.
+
+For simplicity purposes, it is considered that there is no possibility of jackpot and no multiple bets.
+
+### Input Data
+
 UNDER CONSTRUCTION
+
+### Output Data
+
+### Example
+
+#### Input Data
+
+100000.00 <br/>
+20 10 5 1 49 1 11 <br/>
+10 <br/>
+ESP 000001 20 10 5 <br/>
+IRL 000002 20 10 5 <br/>
+POR 000003 20 10 5 <br/>
+ESP 000004 20 10 5 <br/>
+POR 000005 20 10 5 <br/>
+FRA 000006 20 10 5 <br/>
+POR 000007 21 11 6 <br/>
+POR 000008 21 11 6 <br/>
+POR 000009 21 11 6 <br/>
+POR 000010 21 11 6 <br/>
+5 <br/>
+p POR <br/>
+p ESP <br/>
+p IRL <br/>
+p GBR <br/>
+p FRA <br/>
+
+#### Output Data
+
+1 32000.00 1 32000.00 <br/>
+2 4800.00 2 2400.00 <br/>
+3 1600.00 2 800.00 <br/>
+4 800.00 1 800.00 <br/>
+5 700.00 0 0.00 <br/>
+6 700.00 0 0.00 <br/>
+7 500.00 0 0.00 <br/>
+8 2300.00 0 0.00 <br/>
+9 2200.00 0 0.00 <br/>
+10 3700.00 0 0.00 <br/>
+11 6500.00 0 0.00 <br/>
+12 17600.00 0 0.00 <br/>
+13 18000.00 0 0.00 <br/>
+4 <br/>
+1 1 0 0 0 0 0 0 0 0 0 <br/>
+0 1 0 1 0 0 0 0 0 0 0 <br/>
+0 0 1 0 0 0 0 0 0 0 0 <br/>
+0 0 0 0 0 0 0 0 0 0 0 <br/>
+0 0 1 0 0 0 0 0 0 0 0 <br/>
+000005 <br/>
+000001 <br/>
+000003 <br/>
+000002 <br/>
+000006 <br/>
+000004 <br/>
 
 ## Part 3
 
 UNDER CONSTRUCTION
+
+### Input Data
+
+### Output Data
+
+### Example
+
+#### Input Data
+
+#### Output Data
