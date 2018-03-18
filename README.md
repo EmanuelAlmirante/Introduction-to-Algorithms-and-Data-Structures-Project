@@ -8,6 +8,9 @@ This repository has the project of the course of Introduction to Algorithms and 
 - [Part 1](https://github.com/EmanuelAlmirante/Introduction-to-Algorithms-and-Data-Structures-Project#part-1)
   - [Input Data](https://github.com/EmanuelAlmirante/Introduction-to-Algorithms-and-Data-Structures-Project/blob/master/README.md#input-data)
   - [Output Data](https://github.com/EmanuelAlmirante/Introduction-to-Algorithms-and-Data-Structures-Project/blob/master/README.md#output-data)
+  - [Example](https://github.com/EmanuelAlmirante/Introduction-to-Algorithms-and-Data-Structures-Project/blob/master/README.md#example)
+    - [Input Data](https://github.com/EmanuelAlmirante/Introduction-to-Algorithms-and-Data-Structures-Project/blob/master/README.md#input-data-1)
+    - [Output Data](https://github.com/EmanuelAlmirante/Introduction-to-Algorithms-and-Data-Structures-Project/blob/master/README.md#output-data-1)
 - [Part 2](https://github.com/EmanuelAlmirante/Introduction-to-Algorithms-and-Data-Structures-Project#part-2)
 - [Part 3](https://github.com/EmanuelAlmirante/Introduction-to-Algorithms-and-Data-Structures-Project#part-3)
 
