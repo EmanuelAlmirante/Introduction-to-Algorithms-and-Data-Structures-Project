@@ -56,6 +56,59 @@ If a country is in risk of entering in default (**debt >= Pd * GDP**) the progra
 
 - A sequence of lines, where each line corresponds to information about the consequences of a specific country defaulting. The lines respect the order given in the input and each line will have two numbers, with the first number representing the countries in risk of intervention and the second number representing the countries defaulting.
 
+### Example
+
+#### Input Data
+
+0.7
+0.9
+ALE 40 100
+AUT 20 30
+BEL 20 30
+CHI 5 15
+ESL 10 20
+ELO 10 20
+ESP 60 80
+EST 2 10
+FIN 15 40
+FRA 50 90
+GRE 50 40
+HOL 15 40
+IRL 50 50
+ITA 70 80
+LUX 2 20
+MAL 4 10
+POR 16 20
+0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+1 0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+1 1 0 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+1 0 0 0 0 0 1 0 0 1 1 0 0 1 0 0 0
+1 1 1 1 0 1 1 1 1 1 1 1 0 0 0 0 0
+1 1 1 1 1 0 1 1 1 1 1 1 0 0 0 0 0
+1 1 1 1 1 1 0 1 1 1 1 1 1 1 1 1 1
+1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1
+1 1 1 0 1 1 1 1 0 1 1 1 1 1 1 1 1
+1 1 1 1 1 1 1 1 1 0 1 1 1 1 1 1 1
+1 1 1 1 1 1 1 1 1 1 0 1 1 1 1 1 1
+1 1 1 0 1 1 1 1 1 1 1 0 1 1 1 1 1
+1 1 1 1 1 1 1 1 1 1 1 1 0 1 1 1 1
+1 1 1 1 1 1 1 1 1 1 1 1 1 0 1 1 1
+1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1
+1 0 0 0 0 0 1 0 0 1 0 1 0 0 0 0 0
+1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0
+3
+d GRE
+d IRL
+d ALE
+
+#### Output Data
+
+3 ESP ITA POR
+2 GRE IRL
+6 4
+6 4
+6 6
+
 ## Part 2 
 
 UNDER CONSTRUCTION
