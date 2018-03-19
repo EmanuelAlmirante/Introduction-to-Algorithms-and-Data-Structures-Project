@@ -121,7 +121,9 @@ d ALE <br/>
 
 ### Compile and execute the code
 
-UNDER CONSTRUCTION
+- Compile -> $ gcc -ansi -Wall -pedantic -o proj1 *.c
+
+- Execute -> $ ./proj1 < in.txt > out.txt
 
 ## Part 2 
 
@@ -155,7 +157,7 @@ For simplicity purposes, it is considered that there is no possibility of jackpo
 
 ### Input Data
 
-- A line with a real integer **M (M > 0)** that indicates the amount avaible to distribute in prizes;
+- A line with a real number **M (M > 0)** that indicates the amount avaible to distribute in prizes;
   
 - A line with the winning sequence of numbers, separated by blank spaces: five numbers in the interval [1, 50] and two stars in the interval [1, 11];
   
@@ -176,9 +178,9 @@ For simplicity purposes, it is considered that there is no possibility of jackpo
 
 - For which of the 13 possible prizes (1st to 13th), a line with information separated by a blank space:
   - identification of the prize (integer **p** in the interval [1, 13];
-  - available amount for the prize **p** (real with two decimal places);
+  - available amount for the prize **p** (real number with two decimal places);
   - number of winners of prize **p** (integer);
-  - value of the prize **p** (real with two decimal places);
+  - value of the prize **p** (real number with two decimal places);
   
 - Number of different countries with prized bets;
 
@@ -240,7 +242,9 @@ p FRA <br/>
 
 ### Compile and execute the code
 
-UNDER CONSTRUCTION
+- Compile -> $ gcc -ansi -Wall -pedantic -o proj2 *.c
+
+- Execute -> $ ./proj2 < in.txt > out.txt
 
 ## Part 3
 
