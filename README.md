@@ -155,9 +155,36 @@ For simplicity purposes, it is considered that there is no possibility of jackpo
 
 ### Input Data
 
-UNDER CONSTRUCTION
+- A line with a real integer **M (M > 0)** that indicates the amount avaible to distribute in prizes;
+  
+- A line with the winning sequence of numbers, separated by blank spaces: five numbers in the interval [1, 50] and two stars in the interval [1, 11];
+  
+- A line containing an integer **A (A > 0)** that indicates the number of registered bets;
+  
+- A sequence of **A** lines, containing information relative to **A** registered bets, which with the following format:
+  - code of the country where the bet was registered (unique sequence of three letters) followed by a blank space;
+  - code of the bet (unique sequence of six numbers) followed by a blank space;
+  - 7 integer numbers corresponding to the winning sequence: ive numbers in the interval [1, 50] and two stars in the interval [1, 11], separated by blank spaces;
+  
+- A line with an integer **P (P > 0)** that indicates the number of information requests about the number of prizes (from 1st to 13th) that will be distributed in a certain country considering the bets registered and the winning sequence of numbers;
+
+- A sequence of **P** lines with the information requests and the following format:
+  - a letter **p** followed by a blank space;
+  - the code of the country (unique sequence of three letters).
 
 ### Output Data
+
+- For which of the 13 possible prizes (1st to 13th), a line with information separated by a blank space:
+  - identification of the prize (integer **p** in the interval [1, 13];
+  - available amount for the prize **p** (real with two decimal places);
+  - number of winners of prize **p** (integer);
+  - value of the prize **p** (real with two decimal places);
+  
+- Number of different countries with prized bets;
+
+- Sequence of **P** lines, with each line corresponding to the answer to one of the **P** information requests made in the input and that contains 1st prizes, 2nd prizes, ..., 13th prizes that were distributed, separated by a blank space. The order of the lines of type **p** in the input is respected in the output;
+
+- List of prized bets ordered by prize and, inside each prize, ordered by the code of the bet, this is, list of bets that won 1st prize ordered by code of the bet, followed by the bets that won 2nd prize ordered by the code of the bet, etc.
 
 ### Example
 
