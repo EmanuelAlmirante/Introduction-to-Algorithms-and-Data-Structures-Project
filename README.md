@@ -176,7 +176,7 @@ For simplicity purposes, it is considered that there is no possibility of jackpo
 
 ### Output Data
 
-- For each of the 13 possible prizes (1st to 13th), a line with information separated by a blank space:
+- For which of the 13 possible prizes (1st to 13th), a line with information separated by a blank space:
   - identification of the prize (integer **p** in the interval [1, 13];
   - available amount for the prize **p** (real number with two decimal places);
   - number of winners of prize **p** (integer);
@@ -250,11 +250,27 @@ p FRA <br/>
 
 ## Part 3
 
-UNDER CONSTRUCTION
+This project it is developed a program that manipulates information relative to available products and purchases made in a supermarket. During the day a set of clients buys products in the supermarket and their respective purchase tickets are processed. 
+
+At the end of the day the program should produce a a listing of the tickets that were emitted and statistics about the cash register movements, namely the number of clients processed, total billied and most selled product.
 
 ### Input Data
 
+- A sequence of lines with information relative to products. Each line has the following format:
+  - the character 'p' followed by a blank space; 
+  - code of the product (unique sequence of ten digits) followed by a blank space;
+  - unitary price of the product without VAT followed by a blank space;
+  - VAT of the product (0.06, 0.13 or 0.23) followed by a blank space;
+  - description of the product (sequence of characters with a maximum size of 20);
+  
+- Sequence of shopping carts with the following format:
+  - a line with the character 'c' that indicates the beginning of the shopping cart;
+  - a sequence of lines with the code of the products in the cart (one per line);
+  - a line with the character 't' that indicates the end of the shopping cart and the write in the ticket.
+
 ### Output Data
+
+- 
 
 ### Example
 
