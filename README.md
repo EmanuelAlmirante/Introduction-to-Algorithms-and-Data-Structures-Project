@@ -129,7 +129,7 @@ d ALE <br/>
 
 - Compile -> $ gcc -ansi -Wall -pedantic -o proj1 *.c
 
-- Execute -> $ ./proj1 < in.txt > out.txt
+- Execute -> $ ./proj1 <in.txt> out.txt
 
 ## Part 2 
 
@@ -250,7 +250,7 @@ p FRA <br/>
 
 - Compile -> $ gcc -ansi -Wall -pedantic -o proj2 *.c
 
-- Execute -> $ ./proj2 < in.txt > out.txt
+- Execute -> $ ./proj2 <in.txt> out.txt
 
 **Note:** When compiling, there may be two warnings. They can be safely ignored.
 
@@ -350,3 +350,7 @@ t <br/>
 0000000003 <br/>
 
 ### Compile and execute the code
+
+- Compile -> $ gcc -ansi -Wall -pedantic -lm -o proj3 *.c
+
+- Execute -> $ ./proj3 <in.txt> out.txt
