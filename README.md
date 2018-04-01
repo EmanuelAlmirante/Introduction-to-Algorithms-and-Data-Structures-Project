@@ -176,7 +176,7 @@ For simplicity purposes, it is considered that there is no possibility of jackpo
 
 ### Output Data
 
-- For which of the 13 possible prizes (1st to 13th), a line with information separated by a blank space:
+- For each of the 13 possible prizes (1st to 13th), a line with information separated by a blank space:
   - identification of the prize (integer **p** in the interval [1, 13];
   - available amount for the prize **p** (real number with two decimal places);
   - number of winners of prize **p** (integer);
