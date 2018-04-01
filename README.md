@@ -250,30 +250,95 @@ p FRA <br/>
 
 ## Part 3
 
-This project it is developed a program that manipulates information relative to available products and purchases made in a supermarket. During the day a set of clients buys products in the supermarket and their respective purchase tickets are processed. 
+This project it is developed a program that manipulates information relative to available products and purchases made in a supermarket. During the day a set of clients buys products in the supermarket and their respective purchase receipts are processed. 
 
-At the end of the day the program should produce a a listing of the tickets that were emitted and statistics about the cash register movements, namely the number of clients processed, total billied and most selled product.
+At the end of the day the program should produce a a listing of the receipts that were emitted and statistics about the cash register movements, namely the number of clients processed, total billied and most selled product.
 
 ### Input Data
 
 - A sequence of lines with information relative to products. Each line has the following format:
-  - the character 'p' followed by a blank space; 
+  - the letter **p** followed by a blank space; 
   - code of the product (unique sequence of ten digits) followed by a blank space;
   - unitary price of the product without VAT followed by a blank space;
   - VAT of the product (0.06, 0.13 or 0.23) followed by a blank space;
   - description of the product (sequence of characters with a maximum size of 20);
   
 - Sequence of shopping carts with the following format:
-  - a line with the character 'c' that indicates the beginning of the shopping cart;
+  - a line with the letter **c** that indicates the beginning of the shopping cart;
   - a sequence of lines with the code of the products in the cart (one per line);
-  - a line with the character 't' that indicates the end of the shopping cart and the write in the ticket.
+  - a line with the letter **t** that indicates the end of the shopping cart and the write in the ticket.
 
 ### Output Data
 
-- 
+- For each shopping cart list the respective receipt with the following information:
+  - a listing of the bought products ordered by ascending order of VAT. Inside each VAT the produts should be ordered by ascending order of code. For each product it should be shown:
+    - a line with the VAT (6%, 13% or 23%), the code of the product and the respective description, separated by a blank space;
+    - a line with the total number of bought products, the letter **x**, the unitary price with VAT and the total price, separated by a blank space. The prices should be presented with two decimal places. The unitary price with VA should be rounded before the calculation of the total price;
+
+- Total value of the purchases;
+  
+- After the writing of the receipts it should be shown the following information:
+  - a line with the number of shopping carts processed;
+  - a line with the value billed for all the shopping carts;
+  - a line with the code of the most bought product. In case of tie it should be written the product with the lowest code. This line should be omitted in case the number of shopping carts is zero.
 
 ### Example
 
 #### Input Data
 
+p 0000000001 <br/>
+p 0000000002 <br/>
+p 0000000003 <br/>
+p 0000000004 <br/>
+p 0000000005 <br/>
+p 0000000006 <br/>
+c <br/>
+0000000001 <br/>
+0000000002 <br/>
+0000000003 <br/>
+0000000004 <br/>
+0000000005 <br/>
+0000000006 <br/>
+t <br/>
+c <br/>
+0000000001 <br/>
+0000000006 <br/>
+0000000002 <br/>
+0000000001 <br/>
+0000000003 <br/>
+0000000003 <br/>
+0000000006 <br/>
+0000000004 <br/>
+0000000003 <br/>
+0000000006 <br/>
+t <br/>
+
 #### Output Data
+
+6% 0000000001 ananas dos acores <br/>
+1 x 6.57 6.57 <br/>
+6% 0000000003 pao alentejano <br/>
+1 x 0.85 0.85 <br/>
+13% 0000000005 vinho do dao <br/>
+1 x 8.76 8.76 <br/>
+13% 0000000006 queijo da serra <br/>
+1 x 17.32 17.32 <br/>
+23% 0000000002 biscoitos da beira <br/>
+1 x 6.77 6.77 <br/>
+23% 0000000004 doce amendoa algarve <br/>
+1 x 5.54 5.54 <br/>
+45.81 <br/>
+6% 0000000001 ananas dos acores <br/>
+2 x 6.57 13.14 <br/>
+6% 0000000003 pao alentejano <br/>
+3 x 0.85 2.55 <br/>
+13% 0000000006 queijo da serra <br/>
+3 x 17.32 51.96 <br/>
+23% 0000000002 biscoitos da beira <br/>
+1 x 6.77 6.77 <br/>
+23% 0000000004 doce amendoa algarve <br/>
+1 x 5.54 5.54 <br/>
+79.96 <br/>
+2 <br/>
+125.77 <br/>
+0000000003 <br/>
