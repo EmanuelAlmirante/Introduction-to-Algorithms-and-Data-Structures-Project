@@ -20,6 +20,12 @@ This repository has the project of the course of Introduction to Algorithms and 
     - [Output Data](https://github.com/EmanuelAlmirante/Introduction-to-Algorithms-and-Data-Structures-Project#output-data-3)
   - [Compile and execute the code](https://github.com/EmanuelAlmirante/Introduction-to-Algorithms-and-Data-Structures-Project/blob/master/README.md#compile-and-execute-the-code-1)
 - [Part 3](https://github.com/EmanuelAlmirante/Introduction-to-Algorithms-and-Data-Structures-Project#part-3)
+  - [Input Data](https://github.com/EmanuelAlmirante/Introduction-to-Algorithms-and-Data-Structures-Project#input-data-4)
+  - [Output Data](https://github.com/EmanuelAlmirante/Introduction-to-Algorithms-and-Data-Structures-Project#output-data-4)
+  - [Example](https://github.com/EmanuelAlmirante/Introduction-to-Algorithms-and-Data-Structures-Project#example-2)
+    - [Input Data](https://github.com/EmanuelAlmirante/Introduction-to-Algorithms-and-Data-Structures-Project#input-data-5)
+    - [Output Data](https://github.com/EmanuelAlmirante/Introduction-to-Algorithms-and-Data-Structures-Project#output-data-5)
+  - [Compile and execute the code](https://github.com/EmanuelAlmirante/Introduction-to-Algorithms-and-Data-Structures-Project/blob/master/README.md#compile-and-execute-the-code-2)
 
 ## Objetives
 
