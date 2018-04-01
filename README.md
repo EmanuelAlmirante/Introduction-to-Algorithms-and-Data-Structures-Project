@@ -246,6 +246,8 @@ p FRA <br/>
 
 - Execute -> $ ./proj2 < in.txt > out.txt
 
+**Note:** When compiling, there may be two warnings. They can be safely ignored.
+
 ## Part 3
 
 UNDER CONSTRUCTION
