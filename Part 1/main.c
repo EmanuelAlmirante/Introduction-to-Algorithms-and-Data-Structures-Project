@@ -88,18 +88,37 @@ void riskInterventionAndDefault(tableOfCountries table[], float pi, float pd, in
     printf("\n");
 }
 
+int searchCountryTable(char vector[VAL_2], tableOfCountries table[]) {
+    int i;
+
+    /*Loops through the table with the countries*/
+    for(i = 0; i < VAL_1; i++) {
+        /*Compares the given string with the code of the country and, if true, returns the position of that country*/
+        if((strcmp(vector, (table[i].code))) == 0) {
+            printf("%s ", table[i].code);
+            printf("%d", i);
+            return i;
+            break;
+        }
+    }
+
+    return 0;
+}
+
 int casesDefaulting(char vector[VAL_2][4], tableOfCountries table[], float debtMatrix[LINE][COLUMN], float pd, int l) {
     int i = 0, p, o = 0;
 
     /*Loops through vector of countries in default while it does not encounter character 'z'*/
-    while(v[i][0] != 'z') {
-        p = 
+    while(vector[i][0] != 'z') {
+        /*Integer that is the position of the country in the table*/
+        p = searchCountryTable(vector[i], table);
         /*Flag indicating that the country was already analyzed*/
         table[p].flag = 0;
         /*Sum the debt of that country to other countries to the debt of those other countries*/
-        sumDebt(table, debtMatrix, p);
+        /*sumDebt(table, debtMatrix, p);*/
         i++;
     }
+
     return o;
 }
 
@@ -158,6 +177,8 @@ int main() {
         scanf("%s", vectorDefaulting[0]);
 
         l = (casesDefaulting(vectorDefaulting, table, debtMatrix, pd, l));
+
+        printf("%d", l);
 
         cleanCounters(countI, countD);
         resetsOriginalDebtsTable(table, createVectorOriginalDebts);

@@ -58,7 +58,7 @@ int partition(int v[], int begin, int end) {
   int i, j;
 
   i = begin;
-  for (j = begin + 1; j <= end; ++j){
+  for (j = begin+1; j <= end; ++j){
 
       if (v[j] < v[begin]){
           ++i;
@@ -76,8 +76,8 @@ void quickSort(int v[], int begin, int end) {
 
   if (end > begin) {
     r = partition(v, begin, end);
-    quickSort(v, begin, r - 1);
-    quickSort(v, r + 1, end);
+    quickSort(v, begin, r-1);
+    quickSort(v, r+1, end);
   }
 }
 
