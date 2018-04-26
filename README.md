@@ -1,6 +1,6 @@
 # Introduction to Algorithms and Data Structures Project
 
-This repository has the project of the course of Introduction to Algorithms and Data Structures.
+This repository hosts the project of the course of Introduction to Algorithms and Data Structures.
 
 ## Table of Contents
 
