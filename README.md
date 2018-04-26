@@ -29,7 +29,7 @@ This repository hosts the project of the course of Introduction to Algorithms an
 
 ## Objetives
 
-This repository will have the project I did for the course of IADS in college. The project is a simple one, but that contains the most fundamental concepts of the programming language C. The 3 parts are not related to each other and work as independent projects.
+This repository will have the project I did for the course of IADS in college. The project is a simple one, but contains the most fundamental concepts of the programming language C. The 3 parts are not related to each other and work as independent projects.
 
 Over time, I will try to improve the code the best I can. Any help or recommendation is welcome, so feel free to change the code. 
 
