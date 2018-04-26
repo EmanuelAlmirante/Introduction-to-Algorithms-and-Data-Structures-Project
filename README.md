@@ -27,7 +27,7 @@ This repository hosts the project of the course of Introduction to Algorithms an
     - [Output Data](https://github.com/EmanuelAlmirante/Introduction-to-Algorithms-and-Data-Structures-Project#output-data-5)
   - [Compile and execute the code](https://github.com/EmanuelAlmirante/Introduction-to-Algorithms-and-Data-Structures-Project/blob/master/README.md#compile-and-execute-the-code-2)
 
-## Objetives
+## Objectives
 
 This repository hosts the project I did for the course of IADS in college. The project is a simple one, but contains the most fundamental concepts of the programming language C. The 3 parts are not related to each other and work as independent projects.
 
