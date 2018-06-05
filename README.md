@@ -131,6 +131,8 @@ d ALE <br/>
 
 - Execute -> $ ./proj1 <in.txt> out.txt
 
+**Note:** Part 1 is not working correctly and will not pass the tests. I will try to fix this in the future.
+
 ## Part 2 
 
 **Note:** at the time there were only nine countries that had the contest. Also, the abbreviations of the countries derived from their names in portuguese.
